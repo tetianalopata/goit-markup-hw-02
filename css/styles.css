@@ -9,16 +9,20 @@
     --transparent-white: #FFFFFF99;
 }
 
-.page {
+body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
 }
 
+button {
+    cursor: pointer;
+}
+
 .hidden  {
-     display: none;
- }
+    display: none;
+}
 
 .list {
     list-style: none;
@@ -82,16 +86,19 @@ color: var(--accent-color)
 /* hero */
 
 .hero {
+    text-align: center;
+    background-color: var(--deep-background-color);
+}
+
+.hero-heading {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
 
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--primary-white);
-    background-color: var(--deep-background-color);
 }
 
 .hero-button {
@@ -156,8 +163,6 @@ color: var(--accent-color)
 
     color: var(--primary-text-color);
     background-color: var(--light-background-color);
-
-    cursor: pointer
 }
 
 .filter-option:hover,
@@ -197,5 +202,7 @@ color: var(--accent-color)
 }
 
 .footer-contact {
+    list-style: none;
+
     color: var(--transparent-white);
 }
